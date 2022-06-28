@@ -35,21 +35,51 @@ section.main{
 	position: relative;
 	width: 100%;
 	padding: 15px 0;
-	height: 100vh;
+	height: 100%;
 	background-color: rgb(15, 15, 15);
+	background-image: url(../imagens/ink-logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
-.main .logo-bg{
-	position:absolute;
+
+.conteudo-header{
+	position: absolute;
+	top: 30%;
 	display: flex;
-	justify-content: flex-end;
-	padding-top: 45px;
-	right: 0;
-	top: 0;
+	flex-direction: column;
 	width: 100%;
+	height: 100%;
+	padding:0 10%;
+	z-index: 1;
 }
-.main img{
-	width: 500px;
-	object-fit: cover;
+.conteudo-header h2{
+	font-size: 3.75rem;
+	color: #ccc;
+	text-shadow: .2rem .2rem  rgb(0,0,0, .7);
+	font-family: OldLondon,sans-serif;
+}
+.conteudo-header p{
+	color: #ccc;
+	margin-top: 3%;
+	padding-left: 2%;
+	text-shadow: .2rem .2rem  rgb(0,0,0, .7);
+	font-size: 3rem;
+	font-family: OldLondon,sans-serif;
+}
+.conteudo-header a{
+	display: block;
+	width: 150px;
+	height: 44px;
+	font-size: 36px;
+	background-color: #c7770e;
+	box-shadow: 10px 5px 5px black;
+	color: black;
+	text-align: center;
+	line-height: 44px;
+	text-decoration: none;
+	margin-top: 3%;
+	border-radius: 20px;
 }
 header{
 	position:absolute;
@@ -109,42 +139,7 @@ nav{
   margin: 8px;
   transition: 0.3s;
 }
-.conteudo-header{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	padding: 0 10%;
-	z-index: 1;
-	margin: 200px 0;
-}
-.conteudo-header h2{
-	font-size: 60px;
-	color: #ccc;
-	text-shadow: .2rem .2rem  rgb(0,0,0, .7);
-	font-family: OldLondon,sans-serif;
-}
-.conteudo-header p{
-	color: #ccc;
-	margin-top: 12px;
-	padding-left: 2%;
-	text-shadow: .2rem .2rem  rgb(0,0,0, .7);
-	font-size: 48px;
-	font-family: OldLondon,sans-serif;
-}
-.conteudo-header a{
-	display: block;
-	width: 150px;
-	height: 44px;
-	font-size: 36px;
-	background-color: #c7770e;
-	box-shadow: 10px 5px 5px black;
-	color: black;
-	text-align: center;
-	line-height: 44px;
-	text-decoration: none;
-	margin-top: 18px;
-	border-radius: 20px;
-}
+
 section.pro{
 	display: flex;
 	align-items: center;
@@ -477,9 +472,10 @@ section.sessao4{
 	body {
     overflow-x: hidden;
  	 }
-	.main img{
-		width: 420px;
-	} 	 
+ 	 .conteudo-header{
+ 	 	top: 30%;
+ 	 }
+	
 	.pro-box1, .pro-box2, .pro-box3{
 		flex-direction: column;
 		align-items: center;
@@ -560,12 +556,22 @@ section.sessao4{
     overflow-x: hidden;
  	 }
 
- .main .logo-bg{
- 	justify-content: center;
+ .conteudo-header{
+ 	top:35%;
  }
- .main img{
- 	width: 390px;
- }
+ .conteudo-header h2{
+	font-size: 2.85rem;
+	margin-top: 5%;
+}
+.conteudo-header p{
+	font-size: 2.85rem;
+	margin-top: 5%;
+}
+.conteudo-header a{
+	width: 118px;
+	height: 37px;
+	font-size: 29px;
+}
 .pro-text{
 	width: 320px;
 	padding: 10px;
